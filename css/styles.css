@@ -4,6 +4,8 @@
     --color-accent: #EB5E28;
     --color-headings: #CCC5B9;
     --color-body: #FFFCF2;
+    --color-border: #ccc;
+    --border-radius: 30px;
 }
 
 *, *::after, *::before{
@@ -232,10 +234,10 @@ a{
 }
 
 
-/* Inputs */
+/* Inputs */ /* Input Groups */
 
 .input{
-    border-radius: 30px;
+    border-radius: var(--border-radius);
     border: 1px solid #ccc;
     color: var(--color-headings);
     font-size: 2rem;
@@ -247,10 +249,27 @@ a{
     color: #cdcbd7;
 }
 
+.input-group{
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    display: flex;
+}
+
+.input-group .btn{
+    margin: 4px;
+}
+
+.input-group .input{
+    border: 0;
+    flex-grow: 1;
+    padding: 1.5rem 1rem;
+
+}
+
 @media screen and (min-width: 1024px) {
     .input{
         font-size: 1.5rem;
     }
 }
 
-/* Input Groups */
+
