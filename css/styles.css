@@ -199,7 +199,7 @@ a{
     cursor: pointer;
     font-size: 1.8rem;
     font-weight: 600;
-    padding: 2rem 3rem;
+    padding: 2rem 4vw;
     margin: 1rem 0rem;
     outline: 0;
     text-transform: uppercase;
@@ -299,6 +299,7 @@ a{
     border: 0;
     flex-grow: 1;
     padding: 1.5rem 2rem;
+    width: 0;
 
 }
 
@@ -559,6 +560,7 @@ a{
     text-align: center;
 }
 
+
 @media screen and (min-width: 768px) {
 
     .callout .grid--1x2{
@@ -647,6 +649,7 @@ a{
     max-width: 1140px;
     margin: 0 auto;
 }
+
 
 /* Navigation Bar */
 
@@ -747,8 +750,9 @@ a{
 }
 
 .block-domain__prices{
+    color: var(--color-headings);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 6rem);
     font-size: 2rem;
     font-weight: 600;
